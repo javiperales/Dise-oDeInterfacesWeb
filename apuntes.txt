@@ -1,0 +1,46 @@
+*--- un selector es un objeto.
+*--- en identificador se pone # para hacer referencia SELECTOR #IDENTIFICADOR {ATRIBUTOS}
+*--- UN IDENTIDICADOR NO ES LO MISMO QUE UNA CLASE
+*---UNA CLASE ES UN ELEMENTO GENERICO
+*---UN IDENTIFICADOR ES UN ELEMENTO ESPECIFICO
+*---
+	AGRUPAMIENTO:
+		SELECTOR1,SELECTOR2{ATRIBUTO1:VALOR1; ATRIBUTO2:VALOR2;}
+	ANIDAMIENTO:
+		SELECTOR1 SELECTOR2{ATRIBUTO1:VALOR1; ATRIBUTO2:VALOR2;}
+	A HIJOS:
+		SELECTOR1 > SELECTOR2(SOLO A HIJOS)
+	A ADYACENES:
+		SELECTOR1 + SELECTOR2(A LOS HERMANOS EN LA JERARQUIA)
+*--- 
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
+*---
