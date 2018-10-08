@@ -13,12 +13,39 @@
 	A ADYACENES:
 		SELECTOR1 + SELECTOR2(A LOS HERMANOS EN LA JERARQUIA)
 *--- 
+	Pseudoclases:
+		no son clases genericas	
+		focus,lang,enabled,disabled,checked,range
 *---
+	Pseudoelementos
+		
 *---
-*---
-*---
-*---
-*---
+	CSS3 en los navegadores
+		profe dijo
+			(1 consejo:
+				Selectores en minusculas y empiezan solo por letras
+			2 consejo:
+				en mayusculas solo los titulos
+			3 consejo:
+				los nombres de los selectores especificos y claros(descriptivos))
+			4 consejo:
+				los nombres no deben tener caracteristicas
+			4 consejo:
+				la legibilidad espacios no pero giones o giones bajos
+			4 consejo:
+				no abusar de las clases
+			4 consejo:
+				dejar mensajes para mi yo del futuro y documentar lo que hace cada cosa
+			4 consejo:
+				
+			4 consejo:
+			4 consejo:
+			4 consejo:
+			4 consejo:
+			4 consejo:
+			4 consejo:
+			4 consejo:
+				
 *---
 *---
 *---
