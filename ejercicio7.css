@@ -1,0 +1,14 @@
+body{
+    /*margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;*/
+    margin: 100px;
+    border: inset 13px blue;
+    border-radius: 15px;
+    border-width: thick;
+    padding: 15px;
+}
+div #body{
+    
+}

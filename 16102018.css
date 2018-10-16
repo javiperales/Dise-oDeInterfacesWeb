@@ -1,0 +1,46 @@
+div#body{
+    margin:auto auto auto auto; 
+	width:710px;
+}
+
+div#header{
+	margin:10px auto 10px auto;
+	width:710px;
+	border:dotted 1px blue;
+    border-radius: 3px;
+}
+
+div#sidebar
+{
+	display:none;
+	border:solid 1px #CCC;
+    padding-left: 16px;
+}
+
+body.main-sidebar div#main, body.sidebar-main div#main {
+	width:490px;
+}
+
+body.main-sidebar div#sidebar, body.sidebar-main div#sidebar{
+	display:block;
+	width:200px;
+	border:solid 1px #CCC;
+}
+
+body.main-sidebar div#main, body.main-sidebar div#sidebar  {
+	float:left;
+	border:solid 1px;
+}
+
+body.sidebar-main div#main, body.sidebar-main div#sidebar{
+	float:right;
+	border:dotted 1px green;
+    
+}
+body.sidebar-main div#footer{
+    width:710px;
+    border: dotted green;    
+    text-align: center;
+    clear: both;
+    margin: auto;
+}

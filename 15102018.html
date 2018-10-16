@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     div#body  /*Define un identificador "body" asociado a un elemento <div>. Es la posiciÃ³n del cuerpo de la pÃ¡gina (barra lateral mÃ¡s contenido) */
+{
+    margin:auto auto auto auto;  /* top right bottom left: equivale a poner un sÃ³lo auto */
+	width:710px; /* El ancho del estilo lo coloca en 710px */
+}
+
+div#header /*Define un identificador "header" asociado a un elemento <div>. Es la posiciÃ³n de la cabecera */
+{
+	margin:10px auto 10px auto;
+	width:710px;
+	border:dotted 1px #CCC;
+}
+
+div#sidebar
+{
+	display:none;
+	border:solid 1px #CCC;
+}
+
+body.main-sidebar div#main, body.sidebar-main div#main /*Define un agrupamiento de: el identificador "main" asociado a un elemento <div>, en anidamiento comÃºn respecto a una clase "main-sidebar" asociada al elemento <body> y el identificador "main" asociado a un elemento <div>, en anidamiento comÃºn respecto a una clase "sidebar-main" asociada al elemento <body>*/
+{
+	width:490px;
+}
+
+body.main-sidebar div#sidebar, body.sidebar-main div#sidebar /*Define un agrupamiento de: el identificador "sidebar" asociado a un elemento <div>, en anidamiento comÃºn respecto a una clase "main-sidebar" asociada al elemento <body> y el identificador "sidebar" asociado a un elemento <div>, en anidamiento comÃºn respecto a una clase "sidebar-main" asociada al elemento <body>*/
+{
+	display:block;
+	width:200px;
+	border:solid 1px #CCC;
+}
+
+body.main-sidebar div#main, body.main-sidebar div#sidebar  /*Main-sidebar. Este estilo coloca el sidebar a la derecha y el main a la izquierda */
+{
+	float:left;
+	border:solid 1px #CCC;
+}
+
+body.sidebar-main div#main, body.sidebar-main div#sidebar /*Sidebar-main. Este estilo coloca el sidebar a la izquierda y el main a la derecha*/
+{
+	float:right;
+	border:solid 1px #CCC;
+}
+
+        
+    </style>
+</head>
+
+<body class="main-sidebar">
+    <div id="header">
+        <h2>Te drogas? No lo sé. Tú dime.</h2>
+    </div>
+    <div id="body">
+        <p>id Body</p>
+        <div id="main">
+            <p>id main</p>
+        </div>
+        <div id="sidebar">
+            <p>id sidebar</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
