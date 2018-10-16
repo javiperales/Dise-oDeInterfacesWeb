@@ -37,7 +37,7 @@ body.sidebar-main div#main, body.sidebar-main div#sidebar{
 	border:dotted 1px green;
     
 }
-body.sidebar-main div#footer{
+body.sidebar-main div#footer{/*para colocar el footer abajo*/
     width:710px;
     border: dotted green;    
     text-align: center;
