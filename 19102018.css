@@ -1,0 +1,19 @@
+a:visited{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color: pink;
+    background-color: blue;
+}
+a:active{
+    color: gray;
+    background-color: brown;
+}
+a{
+    color: yellow;
+    background-color: black;
+}
+.menuEnlaces{
+    
+}
