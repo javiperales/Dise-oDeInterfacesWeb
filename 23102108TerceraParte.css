@@ -1,0 +1,20 @@
+#capa1{
+    position: absolute;
+    z-index: 9;
+    background-color: #060;
+    color: #ffc;
+    padding: 10px;
+    text-align: center;
+    width: 340px;
+    /*si no se define nada se define como statico*/
+}
+#capa2{
+    position: relative;
+    z-index: 17;
+    width: 340px;
+    padding: 10px;
+    background-color: #660;
+    color: #fcf;
+    left: 30px;
+}
+/*las clases son una forma de definer estilos geericos*/

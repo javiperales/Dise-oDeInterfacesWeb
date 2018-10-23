@@ -1,0 +1,70 @@
+div#body{
+    margin:auto auto auto auto; 
+	width:710px;
+}
+
+div#header{
+	margin:10px auto 10px auto;
+	width:710px;
+	border:dotted 1px blue;
+    border-radius: 3px;
+}
+
+div#sidebar
+{
+	display:none;
+	border:solid 1px #CCC;
+    padding-left: 16px;
+}
+
+body.main-sidebar div#main, body.sidebar-main div#main {
+	width:490px;
+}
+
+body.main-sidebar div#sidebar, body.sidebar-main div#sidebar{
+	display:block;
+	width:200px;
+	border:solid 1px #CCC;
+}
+
+body.main-sidebar div#main, body.main-sidebar div#sidebar  {
+	float:left;
+	border:solid 1px;
+}
+
+body.sidebar-main div#main, body.sidebar-main div#sidebar{
+	float:right;
+	border:dotted 1px green;
+    
+}
+body.sidebar-main div#footer{/*para colocar el footer abajo*/
+    width:710px;
+    border: dotted green;    
+    text-align: center;
+    clear: both;
+    margin: auto;
+}
+
+a.menu{
+    text-decoration:none;
+    border: none;
+    line-height: 1,5rem;
+    display: block;line-height: 1.5rem;
+    padding: 0.9rem 1.08rem;
+    width: auto;
+    color: #fff;
+    background-color: #6f2740;
+}
+a.menu:visited{
+    color: #fff;
+    
+}
+a.menu:hover{
+    color: white;
+    background-color: #930536;
+    font-weight: bold;
+}
+a.menu:active{
+    color: #464646;
+    background-color: #b2033f;
+}

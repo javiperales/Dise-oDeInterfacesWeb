@@ -1,0 +1,17 @@
+#capa1{
+    background-color: #666;
+    color: #cff;
+    padding: 10px;/*espaciado*/
+    text-align: center;
+    width: 320px;
+    /*si no se define nada se define como statico*/
+}
+#capa2{
+    position: relative;
+    width: 320px;
+    padding: 10px;
+    background-color: #606;
+    color: #fcf;
+    top: 100px;
+    left: 30px;
+}
