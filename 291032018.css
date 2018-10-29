@@ -1,0 +1,25 @@
+p{
+    background-color:crimson !important;/*da igual lo que pongas que esta es la que 
+    se aplicará ("Prioridad máxima") inconvenite QUE SE CARGA TODOS LOS DEMÁS ESTILOS QU ETENGA LA ETIQUETA ALA QUE SE LE APLICA*/
+    
+}
+.parrafo{
+    background-color: pink;
+}
+/*clase parrafo del selector parrafo*/
+p.parrafo{
+    background-color: maroon;
+}
+#idParrafo{
+    background-color: orange;
+}
+p#idParrafo{/*el espacio significa anidamiento osea que se aplicaría a los id parrafo que tengan id y eso cambia todo*/
+    background-color: red;
+}
+/*el punto es el separador de las clases y la # de los identificadores*/
+
+/*ul > li los hijos directos de li*/
+
+p.parrafo#idParrafo{/*los id que contengan la clase parrafo que sean del selector parrafo*/
+    background-color: green;
+}

@@ -1,6 +1,6 @@
 #capa1{
     position: absolute;
-    z-index: 9;
+    z-index: 17;
     background-color: #060;
     color: #ffc;
     padding: 10px;
@@ -10,7 +10,7 @@
 }
 #capa2{
     position: relative;
-    z-index: 17;
+    z-index: 9;
     width: 340px;
     padding: 10px;
     background-color: #660;
