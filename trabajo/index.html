@@ -1,22 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
     <title>LeyRama </title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="trabajo.css" type="text/css" />
+    <link rel="stylesheet" href="font.css">
+    
 </head>
+
 <body>
+    <div class="grid-container">
+        <div class="cabecera">
+            <div id="logotipo">
+                <img src="logo.png" alt="imagen logo" />
+            </div>
+            <div id="login">
+                <a class="login" href="">Login</a>
+            </div>
+            <div class="leyRama">Mobiliaria & Diseño <br>LeyRama</div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#" class="icon icon-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-youtube"></a>
+                    </li>
+                    <li><a href="#" class="icon icon-mail"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-whatsapp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menuHor">
+            <nav class="dropdownmenu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">EMPRESA</a></li>
+                    <li><a href="#">PRODUCTOS</a>
+                        <ul id="submenu">
+                            <li><a href="#">SILLAS</a></li>
+                            <li><a href="#">MESAS</a></li>
+                            <li><a href="#">MUEBLES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TOUR VIRTUAL</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menuIzq">
+            <a href="#" class="active">Inicio</a>
+            <a href="#">ILUMINACIÓN</a>
+            <a href="#">MESA Y COCINA</a>
+            <a href="#">ACCESORIOS DE HOGAR</a>
+            <a href="#">NAVIDAD</a>
+            <a href="#">IDEAS DE REGALO</a>
+            <a href="#">DECORACIÓN</a>
+        </div>
+        <div class="cuepo">
+            <div class="carousel-wrapper">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                <span id="item-4"></span>
+                <span id="item-5"></span>
+                <span id="item-6"></span>
+                <div class="carousel-item item-1">
+                    <a class="arrow arrow-prev" href="#item-6"></a>
+                    <a class="arrow arrow-next" href="#item-2"></a>
+                </div>
 
-<h1>Grid Layout</h1>
+                <div class="carousel-item item-2">
+                    <a class="arrow arrow-prev" href="#item-1"></a>
+                    <a class="arrow arrow-next" href="#item-3"></a>
+                </div>
 
-<p>This grid layout contains six columns and three rows:</p>
-
-<div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item4">menu Horizontal</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item5">Footer</div>
-</div>
+                <div class="carousel-item item-3">
+                    <a class="arrow arrow-prev" href="#item-2"></a>
+                    <a class="arrow arrow-next" href="#item-4"></a>
+                </div>
+                <div class="carousel-item item-4">
+                    <a class="arrow arrow-prev" href="#item-3"></a>
+                    <a class="arrow arrow-next" href="#item-5"></a>
+                </div>
+                <div class="carousel-item item-5">
+                    <a class="arrow arrow-prev" href="#item-4"></a>
+                    <a class="arrow arrow-next" href="#item-6"></a>
+                </div>
+                <div class="carousel-item item-6">
+                    <a class="arrow arrow-prev" href="#item-5"></a>
+                    <a class="arrow arrow-next" href="#item-1"></a>
+                </div>
+            </div>
+            
+        </div>
+        <!--cuerpo-->
+        <footer class="pie">
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#" class="icon icon-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-youtube"></a>
+                    </li>
+                    <li><a href="#" class="icon icon-mail"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon icon-whatsapp"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
 </body>
+
 </html>
