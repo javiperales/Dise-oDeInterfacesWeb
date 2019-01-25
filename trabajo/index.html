@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<header>
     <title>LeyRama </title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="trabajo.css" type="text/css" />
     <link rel="stylesheet" href="font.css">
-    
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</header>
 
 <body>
     <div class="grid-container">
@@ -19,23 +24,9 @@
                 <a class="login" href="">Login</a>
             </div>
             <div class="leyRama">Mobiliaria & Diseño <br>LeyRama</div>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="#" class="icon icon-facebook"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon icon-twitter"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon icon-youtube"></a>
-                    </li>
-                    <li><a href="#" class="icon icon-mail"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon icon-whatsapp"></a>
-                    </li>
-                </ul>
+
+            <div id="anuncios">
+
             </div>
         </div>
         <div class="menuHor">
@@ -47,12 +38,34 @@
                         <ul id="submenu">
                             <li><a href="#">SILLAS</a></li>
                             <li><a href="#">MESAS</a></li>
-                            <li><a href="#">MUEBLES</a></li>
+                            <li><a href="#">ARMARIOS</a></li>
+                            <li><a href="#">CAMAS</a></li>
+                            <li><a href="#">OTROS</a></li>
                         </ul>
                     </li>
                     <li><a href="#">TOUR VIRTUAL</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <li class="sociales">
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#" class="icon icon-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon icon-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon icon-youtube"></a>
+                                </li>
+                                <li><a href="#" class="icon icon-mail"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon icon-whatsapp"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
+
             </nav>
         </div>
         <div class="menuIzq">
@@ -65,62 +78,123 @@
             <a href="#">DECORACIÓN</a>
         </div>
         <div class="cuepo">
-            <div class="carousel-wrapper">
-                <span id="item-1"></span>
-                <span id="item-2"></span>
-                <span id="item-3"></span>
-                <span id="item-4"></span>
-                <span id="item-5"></span>
-                <span id="item-6"></span>
-                <div class="carousel-item item-1">
-                    <a class="arrow arrow-prev" href="#item-6"></a>
-                    <a class="arrow arrow-next" href="#item-2"></a>
+            <div class="slider">
+                <input type="radio" class="boton" name="boton" checked="checked">
+                <label></label>
+                <input type="radio" class="boton" name="boton">
+                <label></label>
+                <input type="radio" class="boton" name="boton">
+                <label></label>
+                <input type="radio" class="boton" name="boton">
+                <label></label>
+
+                <div class="contenedor-img cuatro-imagenes">
+                    <img src="img/imagen1.jpg" alt="img">
+                    <img src="img/imagen2.jpg" alt="img">
+                    <img src="img/imagen3.jpg" alt="img">
+                    <img src="img/imagen4.jpg" alt="img">
                 </div>
 
-                <div class="carousel-item item-2">
-                    <a class="arrow arrow-prev" href="#item-1"></a>
-                    <a class="arrow arrow-next" href="#item-3"></a>
-                </div>
+            </div>
 
-                <div class="carousel-item item-3">
-                    <a class="arrow arrow-prev" href="#item-2"></a>
-                    <a class="arrow arrow-next" href="#item-4"></a>
+            <!--NOVEDADES-->
+            <div class="novedades">
+                <h1>Novedades</h1>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="row">
+                <div class="column">
+                    <a href="#">
+                        <img src="img/mueble1.jpg" alt="img">
+                    </a>
+                    Sofá<br>
+                    Precio:50.50€
+                    <a href="#">
+                        <img src="img/mueble2.jpg" alt="img">
+                    </a>
+                    Silla<br>
+                    Precio:20.00€
+
                 </div>
-                <div class="carousel-item item-4">
-                    <a class="arrow arrow-prev" href="#item-3"></a>
-                    <a class="arrow arrow-next" href="#item-5"></a>
+                <div class="column">
+                    <a href="#">
+                        <img src="img/mueble3.jpg" alt="img">
+
+                    </a>
+                    Silla Colgante<br>
+                    Precio:60.50€
+                    <a href="#"><img src="img/mueble4.jpg" alt="img"></a>
+                    Mesa<br>
+                    Precio:90.99€
+
                 </div>
-                <div class="carousel-item item-5">
-                    <a class="arrow arrow-prev" href="#item-4"></a>
-                    <a class="arrow arrow-next" href="#item-6"></a>
+                <div class="column">
+                    <a href="#">
+                        <img src="img/mueble5.jpg" alt="img">
+                    </a>
+                    Silla Oficina<br>
+                    Precio:50.50€
+                    <a href="#">
+                        <img src="img/mueble6.jpg" alt="img">
+                    </a>
+                    Taburete<br>
+                    Precio:15.99€
+
                 </div>
-                <div class="carousel-item item-6">
-                    <a class="arrow arrow-prev" href="#item-5"></a>
-                    <a class="arrow arrow-next" href="#item-1"></a>
+                <div class="column">
+
                 </div>
             </div>
-            
+            <p id="ipsum">
+                <strong>¿Qué es Lorem Ipsum?</strong><br>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            </p>
+
         </div>
         <!--cuerpo-->
         <footer class="pie">
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="#" class="icon icon-facebook"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon icon-twitter"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon icon-youtube"></a>
-                    </li>
-                    <li><a href="#" class="icon icon-mail"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon icon-whatsapp"></a>
-                    </li>
-                </ul>
+            <div class="footer-right">
+
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#" class="icon icon-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon icon-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon icon-youtube"></a>
+                        </li>
+                        <li><a href="#" class="icon icon-mail"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon icon-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="#">INICIO</a>
+                    ·
+                    <a href="#">Blog</a>
+                    ·
+                    <a href="#">Dirección</a>
+                    ·
+                    <a href="#">Sobre Nosotros</a>
+                    ·
+                    <a href="#">Ayuda</a>
+                    · 
+                    <a href="#">Contact</a>
+                </p>
+
+                
+            </div>
+            <div class="derechos">LeyRama&copy; 2018</div>
         </footer>
     </div>
 
