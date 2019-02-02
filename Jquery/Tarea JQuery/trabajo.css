@@ -473,4 +473,23 @@ div .social {
     font-family: 'Libre Baskerville', serif;
 }
 
+/*botones para el audio*/
+#play, #pause,#more,#less{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color: #bed38e;
+    border-radius: 6px;
+    border: 2px solid #bed38e;
+  }
+
+#referencia{
+    background-color: #bed38e;
+}
+#myAudio{
+    color: #bed38e;
+}
+
 /*https://unsplash.com/search/photos/bed*/
