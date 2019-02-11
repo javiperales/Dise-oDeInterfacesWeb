@@ -495,4 +495,16 @@ div .social {
     color: #bed38e;
 }
 
+.mostrarAudio,.ocultarAudio,.verVideo,#ocultarVideo,#ocultarVideoYouTube,#verVideoYouTube {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color: #bed38e;
+    border-radius: 6px;
+    border: 2px solid #bed38e;
+}
+
+
 /*https://unsplash.com/search/photos/bed*/
