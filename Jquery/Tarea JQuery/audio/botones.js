@@ -4,44 +4,78 @@ $(document).ready(function () {
     console.log("documento cargado");
     botones();
     audioEscondido(); //oculto los elementos para poder interactuar con ellos
-    ocultarAudio(); //uso el hide()
-    mostrarAudio(); //uso el show()
-    verVideo();
-    ocultarVideo();
+
+    asignarEfectoAlVideo()
+    asignarEfectoAlAudio()
+    asignarEfectoAlVideoDeYouTube()
+    slideImagen()
 });
 
-function verVideo() {
-    $(".verVideo").click(function () {
-        $("#videoInformativo").fadeIn()
-        $(".verVideo").hide()
-        $(".ocultarVideo").show()
-        
-    })
+function slideImagen() {//uso de efectos ANIMATE
+    var img = $("a").children("img");
+    for (i of img) {
+        console.log(i)
+        $(i).mouseenter(
+            function () {
+                $(this).animate({
+                    width: '+=50px',
+                    height: '+=50px'
+                }, "fast", 'swing')
+
+            }
+        )
+        $(i).mouseleave(
+            function () {
+
+                $(this).animate({
+                    width: '-=50px',
+                    height: '-=50px'
+                }, "fast", 'linear');
+            }
+        )
+    }
 }
 
-function ocultarVideo() {
-    $(".ocultarVideo").click(function () {
-        $("#videoInformativo").fadeOut()
-        $(".verVideo").show()
-        $(".ocultarVideo").hide()
-    })
+function asignarEfectoAlVideo() { //uso de efectos FADE
+    $(".verVideo").click(
+        function (e) {
+            if ($(this).html() == "ver video") {
+                $("#videoInformativo").fadeIn()
+                e.target.innerHTML = "ocultar video"
+            } else {
+                e.target.innerHTML = "ver video"
+                $("#videoInformativo").fadeOut()
+            }
 
+        })
 }
 
-function ocultarAudio() {
-    $(".ocultarAudio").click(function () {
-        $("#mostrarOcultarAudio").hide()
-        $(".mostrarAudio").show()
-        $(".ocultarAudio").hide()
-    });
+function asignarEfectoAlAudio() { //uso de efectos hide and show
+    $(".mostrarAudio").click(
+        function (e) {
+            if ($(this).html() == "Mostrar Audio") {
+                $("#mostrarOcultarAudio").show()
+                e.target.innerHTML = "Ocultar Video"
+            } else {
+                e.target.innerHTML = "Mostrar Audio"
+                $("#mostrarOcultarAudio").hide()
+            }
+
+        })
 }
 
-function mostrarAudio() {
-    $(".mostrarAudio").click(function () {
-        $("#mostrarOcultarAudio").show()
-        $(".ocultarAudio").show()
-        $(".mostrarAudio").hide()
-    });
+function asignarEfectoAlVideoDeYouTube() { //uso de efectos slide
+    $("#verVideoYouTube").click(
+        function (e) {
+            if ($(this).html() == "Ver video de youtube") {
+                $(".videoYouTube").slideDown("slow")
+                e.target.innerHTML = "Ocultar video de youtube"
+            } else {
+                e.target.innerHTML = "Ver video de youtube"
+                $(".videoYouTube").slideUp("slow")
+            }
+
+        })
 }
 
 function audioEscondido() {
@@ -49,7 +83,7 @@ function audioEscondido() {
     $(".ocultarAudio").hide()
     $("#videoInformativo").hide()
     $(".ocultarVideo").hide()
-    $("#ocultarVideoYouTube").hide()
+    $(".videoYouTube").hide()
 
 }
 
