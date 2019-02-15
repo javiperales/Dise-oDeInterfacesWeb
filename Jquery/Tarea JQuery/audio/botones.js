@@ -8,32 +8,30 @@ $(document).ready(function () {
     asignarEfectoAlVideo()
     asignarEfectoAlAudio()
     asignarEfectoAlVideoDeYouTube()
-    slideImagen()
+    slideSociales()
 });
 
-function slideImagen() {//uso de efectos ANIMATE
-    var img = $("a").children("img");
-    for (i of img) {
-        console.log(i)
-        $(i).mouseenter(
-            function () {
-                $(this).animate({
-                    width: '+=50px',
-                    height: '+=50px'
-                }, "fast", 'swing')
-
+function slideSociales() { //uso de efectos ANIMATE
+    $("#efectoRedes").click(
+        function (e) {
+            //console.log($(this).html())
+            if ($(this).html() == "Animar Redes Sociales") {
+                $(".social").animate({
+                   
+                }, "fast", function () {
+                    $(this).hide(2000);
+                });
+                e.target.innerHTML = "mostrar redes"
+            } else {
+                e.target.innerHTML = "Animar Redes Sociales"
+                console.log("Estamos en el else")
+                $(".social").animate({
+                    
+                }, 3000, function () {
+                    $(this).show(2000);
+                });
             }
-        )
-        $(i).mouseleave(
-            function () {
-
-                $(this).animate({
-                    width: '-=50px',
-                    height: '-=50px'
-                }, "fast", 'linear');
-            }
-        )
-    }
+        })
 }
 
 function asignarEfectoAlVideo() { //uso de efectos FADE

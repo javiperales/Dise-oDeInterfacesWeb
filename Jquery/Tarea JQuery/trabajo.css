@@ -477,7 +477,7 @@ div .social {
 }
 
 /*botones para el audio*/
-#play, #pause,#more,#less{
+#play, #pause,#more,#less,#efectoRedes{
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
