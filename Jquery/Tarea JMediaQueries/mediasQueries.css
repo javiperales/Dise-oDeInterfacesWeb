@@ -1,0 +1,6 @@
+@media only screen and (max-width: 308px) {
+  /* For mobile phones: */
+  [class*="menuIzq"] {
+    width: 100%;
+  }
+}
