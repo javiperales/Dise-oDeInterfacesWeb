@@ -1,6 +1,25 @@
-@media only screen and (max-width: 308px) {
-  /* For mobile phones: */
-  [class*="menuIzq"] {
-    width: 100%;
-  }
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .cabecera > div {
+        width: 100%;
+        display: block;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .login {
+        width: 100%;
+        float: none;
+    }
+    .menuHor {
+        margin-left: 0px;
+    }
+    .dropdownmenu ul li{
+        display: block;
+        width: 100%;
+    }
+    .menuIzq a{
+        width: 100%;
+    }
 }
