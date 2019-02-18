@@ -506,10 +506,5 @@ div .social {
     border: 2px solid #bed38e;
 }
 
-@media only screen and (max-width: 308px) {
-  /* For mobile phones: */
-  [class*="menuIzq"] {
-    width: 100%;
-  }
-}
+
 /*https://unsplash.com/search/photos/bed*/
