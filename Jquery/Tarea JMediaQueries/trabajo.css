@@ -403,7 +403,6 @@ div .social {
 .pie p.footer-links {
     font-size: 25px;
     font-weight: bold;
-    margin: 0 0 10px;
     font-family: 'Abril Fatface', cursive;
 }
 
@@ -418,16 +417,12 @@ div .social {
 }
 
 .pie .footer-right {
-    padding-right: 10px;
     float: right;
-    margin-top: 6px;
     max-width: 50%;
 }
 
 .pie .footer-left {
-    padding-left: 10px;
     float: left;
-    margin-top: 6px;
     max-width: 50%;
 }
 
