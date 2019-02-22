@@ -9,8 +9,21 @@ $(document).ready(function () {
     asignarEfectoAlAudio()
     asignarEfectoAlVideoDeYouTube()
     slideSociales()
+    plegarDesplegarMenuIzquierdo()
 });
 
+function plegarDesplegarMenuIzquierdo(){
+    $(".desplegar").on('click',function(){
+       if($(this).parent().children("a").is(":visible")){
+           console.log("esta escondido")
+           $($(this).parent()).children("a").hide()
+       } else {
+           $($(this).parent()).children("a").show()
+           console.log("no esta escondido")
+           
+       }
+    })
+}
 function slideSociales() { //uso de efectos ANIMATE
     $("#efectoRedes").click(
         function (e) {

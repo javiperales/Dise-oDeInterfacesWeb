@@ -163,7 +163,7 @@ li.sociales{
     width: 100%;
 }
 
-.menuIzq a {
+.menuIzq a,.desplegar {
     font-family: 'Francois One', sans-serif;
     font-size: 20px;
     background-color: #bac899;
@@ -500,6 +500,111 @@ div .social {
     border-radius: 6px;
     border: 2px solid #bed38e;
 }
-
+.desplegar {
+    width: 100%;
+}
+.desplegar > img{
+    width: 30px;
+    height: 30px;
+}
 
 /*https://unsplash.com/search/photos/bed*/
+
+/***********************Medias Querys************************/
+@media only screen and (max-width: 700px){
+    .grid-container {
+    grid-template-areas:
+        'cabecera'
+        'menuHor'
+        'menuIzq'
+        'cuerpo'
+        'pie';
+}
+    
+    #imgLogo{
+        border: #2D7C33 2px solid;s
+    }
+    .grid-container {
+        display: block;
+    }
+
+    .cabecera > div {
+        width: 100%;
+        display: block;
+        padding-left: auto;
+        padding-right: auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .login {
+        width: 100%;
+        float: none;
+    }
+
+    .menuHor {
+        margin-left: 0px;
+    }
+
+    .dropdownmenu ul li {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        display: block;
+        width: 100%;
+    }
+
+    #efectoRedes {
+        margin: 5px;
+    }
+
+    .row {
+        width: 100%;
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        max-width: 90%;
+    }
+
+    .column a img {
+        width: 100%;
+        height: auto;
+    }
+    #ipsum{
+        width: 100%;
+    }
+    .pie{
+        display: block;
+        width: auto;
+    }
+    .pie .footer-right{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+    .pie .footer-left{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+    }
+    .pie p.footer-links a{
+        width: 100%;
+        display: block;
+    }
+    .social{
+        width: 100%;
+    }
+    .social ul li a {
+        color: white;
+        text-decoration: none;
+        width: auto;
+    }
+    .menuIzq{
+        
+    }
+
+}

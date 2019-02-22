@@ -1,11 +1,9 @@
-@media only screen
-  and (min-width: 320px) 
-  and (max-width: 739px){
+@media only screen and (max-width: 700px){
 
     /* For mobile phones: */
     
     #imgLogo{
-        border: #2D7C33 2px solid;
+        border: #2D7C33 2px solid;s
     }
     .grid-container {
         display: block;
