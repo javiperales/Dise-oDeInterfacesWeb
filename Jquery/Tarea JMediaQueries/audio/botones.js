@@ -13,6 +13,7 @@ $(document).ready(function () {
 });
 
 function plegarDesplegarMenuIzquierdo(){
+    $(".desplegar").parent().children("a").hide()
     $(".desplegar").on('click',function(){
        if($(this).parent().children("a").is(":visible")){
            console.log("esta escondido")
