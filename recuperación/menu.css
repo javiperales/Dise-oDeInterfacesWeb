@@ -1,0 +1,223 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template:
+        'header header header header header header'
+        'menu menu menu menu right right'
+        'main main main main right right'
+        'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/*MENU 1 2 3 4*/
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+    /*background-color: aliceblue;*/
+
+}
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+#menu ul li {
+    display: block;
+    /*un bajo el otro*/
+    color: #ffffff;
+    text-decoration: none;
+    /*para quitar la rayita de los enlaces*/
+    font-weight: 400;
+    font-size: 20px;
+    /*tamaño de letra*/
+    padding: 20px;
+    /*espacio alrededor*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    /*para pasarlo a mayúsculas*/
+    letter-spacing: 1px;
+    /*espacio entre letras*/
+}
+
+#menu ul li {
+    position: relative;
+    float: left;
+    /*poner uno al lado del otro*/
+    margin: 0;
+    padding: 10px;
+    /*espacio entre lis*/
+}
+
+#menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/*MENU 1 2 3 4*/
+/*sub menus*/
+#menu ul ul {
+    display: none;
+    /*hacer que no se despliegue*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eeeeee;
+    padding: 0;
+}
+
+#menu ul ul li {
+    float: none;
+    width: 200px;
+}
+
+#menu ul ul a {
+    padding: 10px 15px;
+}
+
+#menu ul li:hover > ul {
+    display: block;
+}
+
+/*sub menus*/
+
+/*Derecho*/
+#derecho ul li {
+    list-style: none;
+    text-decoration: none;
+    align-content: center;
+}
+
+#derecho ul li a {
+    text-decoration: none;
+
+}
+
+#derecho ul ul {
+    display: none;
+}
+
+#derecho ul ul li {
+    float: none;
+    width: 200px;
+}
+
+#derecho ul ul a {
+    padding: 10px 15px;
+}
+
+#derecho ul li:hover > ul {
+    display: block;
+}
+
+/*Derecho*/
+
+/*HEADER*/
+#header {
+    float: left;
+}
+
+#header li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+#header li a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+/*HEADER*/
+
+/*IMAGE GRID*/
+.image-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color:grey;
+    padding: 10px;
+  }
+  
+  .image-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  #gtr {
+      width: 100%;
+      height: 100%;
+  }
+
+  /*FOOTER*/
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
