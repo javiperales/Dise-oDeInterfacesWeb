@@ -290,8 +290,9 @@
     }
     
     #sociales ul li{
-        width:auto;
-        display:block;
+        width:15px;
+        height: 10px;
+        display:inline;
         
     }
     
