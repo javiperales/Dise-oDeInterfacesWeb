@@ -22,8 +22,8 @@
     display: grid;
     grid-template:
         'header header header header header header'
-        'menu menu menu menu right right'
-        'main main main main right right'
+        'right right menu menu menu menu'
+        'right right main main main main'
         'footer footer footer footer footer footer';
     grid-gap: 10px;
     background-color: darkgrey;
@@ -147,6 +147,27 @@
     float: left;
 }
 
+#logo{
+    padding-left: 10px;
+    float:left;
+    width: 100%;
+    height: auto;
+}
+#cabecera li > a{
+    text-decoration: none;
+}
+
+#cabecera li{
+    background-color: red;
+    list-style: none;
+    display: inline;
+}
+
+#cabecera li >a:hover{
+    background-color: black;
+    color:white;
+}
+
 #header li {
     display: inline-block;
     list-style: none;
@@ -230,8 +251,57 @@
 @media screen and (min-width: 360px) and (max-width: 740px) {
     .grid-container{
         width: 100%;
+        display: block;
+        grid-gap: 10px;
+        background-color: orange;
     }
-    .item1{
+    
+    grid-container > div{
+        background-color: fgba(255,255,255,0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        margin:5px;
+    }
+    
+    .item1 .item2 .item3 .item4 .imte5{
         width: 100%;
+    }
+    .item3{
+        display: block;
+    }
+    
+    #logo{
+        float: none;
+        text-align: center;
+    }
+    
+    #cabecera{
+        clear:both;
+    }
+    
+    #cabecera li{
+        display:block;
+        margin:auto;
+    }
+    
+    #menu{
+        background-color: blue;
+    }
+    
+    #sociales ul li{
+        width:auto;
+        display:block;
+        
+    }
+    
+    #datosTabla{
+        margin: auto auto;
+    }
+    
+    
+    
+    td{
+        font-size: 20px;
     }
 }
